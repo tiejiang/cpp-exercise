@@ -45,6 +45,16 @@ void swap(int *x, int *y){
     return;
 }
 
+void swap_address_copy(int &a, int &b){
+    
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+    return;
+
+}
+
 int main(){
     
     //cout<< "area= "<< LENGTH*HEIGHT<< endl;
@@ -54,8 +64,10 @@ int main(){
     //judgeTest();
     int a = 10;
     int b = 12;
-    swap(&a, &b);
-    cout<< "a= "<< a<< " b= "<<b <<endl;
+   // swap(&a, &b);
+   // cout<< "a= "<< a<< " b= "<<b <<endl;
+   swap_address_copy(a, b);
+   cout<< "a= "<< a<< " b="<< b<< endl;
 
     return 0;
 }
