@@ -1,5 +1,7 @@
 #include <iostream>
-
+#include <cstdlib>
+#include <ctime>
+#include <cstring>
 using namespace std;
 
 //#define LENGTH 100
@@ -55,6 +57,65 @@ void swap_address_copy(int &a, int &b){
 
 }
 
+void arrayTest(){
+    
+    int temp[] = {10, 20, 30, 6};
+    int *temp_pointer = temp;
+    int *temp_pointer_end = temp;
+    for(int i=0; i<4; i++){
+        cout<< "temp["<< i<< "]"<< " ="<< temp[i]<< endl;
+    }
+    cout<< "temp[0]= "<< *temp_pointer<< endl;
+    cout<< "temp[1]= "<< *(temp_pointer+1)<< endl;
+    for(int j=0; j<4; j++){
+        cout<< "array value= "<< *(temp_pointer_end+j)<< endl;    
+    };
+}
+
+void pointer_array(int *param){
+    
+    int *temp = param;
+    for(int i=0; i<3; i++){
+        cout<< "param value= "<< *(temp+i)<< endl;
+    }
+
+}
+
+void set_value_to_pointer_array_func(){
+    
+    int test_array[] = {1, 3, 4, 6, 23, 5};
+    pointer_array(test_array);
+}
+
+int *pointer_func_test(){
+
+    static int receive_array[5];
+    srand((unsigned)time(NULL));
+    for(int i=0; i<5; i++){
+        receive_array[i] = rand();
+        cout<< "receive[]= "<< receive_array[i]<< endl;
+    }
+    return receive_array;
+}
+
+void get_pointer_func_test_value(){
+
+    int *temp = pointer_func_test();
+    for(int i=0; i<5; i++){
+        cout<< "temp value = "<< *(temp+i)<< endl; 
+    }
+  
+}
+
+void string_test(){
+    
+    char greeting[] = {'h', 'l', 'l' };
+    char temp[3];
+    strcpy(temp,greeting);
+    cout<< "value = "<< greeting<< endl;
+    cout<< "temp value= "<< temp<< endl;
+}
+
 int main(){
     
     //cout<< "area= "<< LENGTH*HEIGHT<< endl;
@@ -66,8 +127,11 @@ int main(){
     int b = 12;
    // swap(&a, &b);
    // cout<< "a= "<< a<< " b= "<<b <<endl;
-   swap_address_copy(a, b);
-   cout<< "a= "<< a<< " b="<< b<< endl;
-
+  // swap_address_copy(a, b);
+   //cout<< "a= "<< a<< " b="<< b<< endl;
+    //arrayTest();
+   // set_value_to_pointer_array_func();
+  // get_pointer_func_test_value();
+  string_test();
     return 0;
 }
