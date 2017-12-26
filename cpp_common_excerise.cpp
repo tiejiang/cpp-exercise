@@ -116,6 +116,52 @@ void string_test(){
     cout<< "temp value= "<< temp<< endl;
 }
 
+void pointer_array(){
+
+    int var[] = {1, 3, 54, 6};
+    int *pointer[4];
+
+    for(int i=0; i<4; i++){
+        pointer[i] = &var[i];
+
+        cout<< "value of pointer[]= "<< *pointer[i] <<endl;
+    }
+    
+}
+
+void pointer_string_array(){
+    
+    const char *names[3] = {"we", "adf", "afr"};
+    for(int i=0; i<3; i++){
+        cout<< "string value= "<< names[i]<< endl;
+    }
+}
+
+void pointer_pointer_test(){
+
+    int a = 500;
+    int *pointer_a;
+    int **pointer_pointer_a;
+    pointer_a = &a;
+    pointer_pointer_a = &pointer_a;
+    cout<< "a address= "<< pointer_a<< endl;
+    cout<< "pointer address= "<< pointer_pointer_a<< endl;
+    cout<< "a value= "<< *pointer_a <<endl;
+    cout<< "or "<< **pointer_pointer_a<< endl;
+}
+
+void transfer_pointer(int *value){
+
+    *value = 12;
+}
+
+void set_transfer_pointer(){
+    
+    int temp = 3;
+    transfer_pointer(&temp);
+    cout<< "value temp= "<< temp<< endl;
+}
+
 int main(){
     
     //cout<< "area= "<< LENGTH*HEIGHT<< endl;
@@ -132,6 +178,11 @@ int main(){
     //arrayTest();
    // set_value_to_pointer_array_func();
   // get_pointer_func_test_value();
-  string_test();
+  //string_test();
+   // pointer_array();
+   //pointer_string_array();
+   //pointer_pointer_test();
+   set_transfer_pointer();
+
     return 0;
 }
