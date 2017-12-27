@@ -162,6 +162,48 @@ void set_transfer_pointer(){
     cout<< "value temp= "<< temp<< endl;
 }
 
+void quote_test(){
+
+    int i;
+    double d;
+    int& r = i;
+    double& s = d;
+
+    i = 5;
+    d = 4;
+    cout<< "r= "<< r<< endl;
+    cout<< "s= "<< s<< endl;
+}
+
+void quote_func(int& a, int& b){
+
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+
+void test_quote(){
+
+    int i = 1;
+    int j = 3;
+    quote_func(i, j);
+    cout<< "i= "<< i<< "j= "<< j<< endl;
+}
+
+int val[] = {1, 2, 3, 5, 2};
+int& setValue(int i){
+
+    return val[i];
+}
+
+void setQuote_test(){
+
+    setValue(3) = 200;
+    cout<< "val[3]= "<< val[3]<< endl;
+}
+
+
 int main(){
     
     //cout<< "area= "<< LENGTH*HEIGHT<< endl;
@@ -182,7 +224,9 @@ int main(){
    // pointer_array();
    //pointer_string_array();
    //pointer_pointer_test();
-   set_transfer_pointer();
-
+   //set_transfer_pointer();
+   // quote_test();
+   //test_quote();
+   setQuote_test();
     return 0;
 }
