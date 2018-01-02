@@ -203,6 +203,40 @@ void setQuote_test(){
     cout<< "val[3]= "<< val[3]<< endl;
 }
 
+struct Books{
+    char title[20];
+    char author[10];
+    int book_id;
+};
+struct Books struct_test(){
+
+    Books book1;
+
+    strcpy(book1.title, "C++");
+    strcpy(book1.author, "tiejiang");
+    book1.book_id = 234;
+
+    cout<< "book info "<< book1.title<< endl;
+    cout<< "book info "<< book1.author<< endl;
+    cout<< "book info "<< book1.book_id<< endl;
+    
+    return book1;
+}
+
+void get_book_info(struct Books book){
+
+    cout<< "book name "<< book.title<< endl;
+    cout<< "author "<< book.author<< endl;
+}
+
+
+void pointer_struct_test(struct Books *book){
+
+    //struct Books *struct_book = book;
+    //cout<< "book info= "<< struct_book->title<< endl;
+    cout<< "book info= "<< book->title<< endl;
+}
+
 
 int main(){
     
@@ -211,8 +245,8 @@ int main(){
    // printFuncTest();
    // loopTest();
     //judgeTest();
-    int a = 10;
-    int b = 12;
+   int a = 10;
+   int b = 12;
    // swap(&a, &b);
    // cout<< "a= "<< a<< " b= "<<b <<endl;
   // swap_address_copy(a, b);
@@ -223,10 +257,16 @@ int main(){
   //string_test();
    // pointer_array();
    //pointer_string_array();
-   //pointer_pointer_test();
+    //pointer_pointer_test();
    //set_transfer_pointer();
-   // quote_test();
+   //quote_test();
    //test_quote();
-   setQuote_test();
+   //setQuote_test();
+   // struct_test();
+    //get_book_info(struct_test());
+    Books book_p = struct_test();
+    struct Books *p_book = &book_p;
+    pointer_struct_test(p_book);
+   
     return 0;
 }
