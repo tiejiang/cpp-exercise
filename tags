@@ -1,0 +1,122 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Author	book_class.cpp	/^        string Author;$/;"	m	class:book_class	file:	access:public
+Books	cpp_common_excerise.cpp	/^struct Books{$/;"	s	file:
+Books::author	cpp_common_excerise.cpp	/^    char author[10];$/;"	m	struct:Books	file:	access:public
+Books::book_id	cpp_common_excerise.cpp	/^    int book_id;$/;"	m	struct:Books	file:	access:public
+Books::title	cpp_common_excerise.cpp	/^    char title[20];$/;"	m	struct:Books	file:	access:public
+CIRCLE	enum_test.cpp	5;"	d	file:
+ChineseBook	book_class.cpp	/^        ChineseBook(int number);$/;"	p	class:ChineseBook	file:	access:public	signature:(int number)
+ChineseBook	book_class.cpp	/^ChineseBook::ChineseBook(int number){$/;"	f	class:ChineseBook	signature:(int number)
+ChineseBook	book_class.cpp	/^class ChineseBook: public book_class{$/;"	c	file:	inherits:book_class
+ChineseBook::ChineseBook	book_class.cpp	/^        ChineseBook(int number);$/;"	p	class:ChineseBook	file:	access:public	signature:(int number)
+ChineseBook::ChineseBook	book_class.cpp	/^ChineseBook::ChineseBook(int number){$/;"	f	class:ChineseBook	signature:(int number)
+ChineseBook::book_name	book_class.cpp	/^        string book_name;$/;"	m	class:ChineseBook	file:	access:public
+ChineseBook::book_number	book_class.cpp	/^        int book_number;$/;"	m	class:ChineseBook	file:	access:public
+ChineseBook::book_price	book_class.cpp	/^        int book_price;$/;"	m	class:ChineseBook	file:	access:public
+ChineseBook::data	book_class.cpp	/^        string data;$/;"	m	class:ChineseBook	file:	access:public
+ChineseBook::get_book_name	book_class.cpp	/^        string get_book_name(void);$/;"	p	class:ChineseBook	file:	access:public	signature:(void)
+ChineseBook::get_book_name	book_class.cpp	/^string ChineseBook::get_book_name(void){$/;"	f	class:ChineseBook	signature:(void)
+LENGTH	enum_test.cpp	6;"	d	file:
+arrayTest	cpp_common_excerise.cpp	/^void arrayTest(){$/;"	f	signature:()
+author	cpp_common_excerise.cpp	/^    char author[10];$/;"	m	struct:Books	file:	access:public
+book_account	book_class.cpp	/^        static int book_account;$/;"	m	class:book_class	file:	access:public
+book_account	book_class.cpp	/^int book_class::book_account=4;$/;"	m	class:book_class	file:
+book_class	book_class.cpp	/^        book_class(const book_class &book_class_obj);$/;"	p	class:book_class	file:	access:public	signature:(const book_class &book_class_obj)
+book_class	book_class.cpp	/^        book_class(double number);$/;"	p	class:book_class	file:	access:public	signature:(double number)
+book_class	book_class.cpp	/^        book_class(double number, double book_price);$/;"	p	class:book_class	file:	access:public	signature:(double number, double book_price)
+book_class	book_class.cpp	/^book_class::book_class(const book_class &book_class_obj){$/;"	f	class:book_class	signature:(const book_class &book_class_obj)
+book_class	book_class.cpp	/^book_class::book_class(double number){$/;"	f	class:book_class	signature:(double number)
+book_class	book_class.cpp	/^book_class::book_class(double number, double book_price):number(number), price(book_price){$/;"	f	class:book_class	signature:(double number, double book_price)
+book_class	book_class.cpp	/^class book_class{$/;"	c	file:
+book_class::Author	book_class.cpp	/^        string Author;$/;"	m	class:book_class	file:	access:public
+book_class::book_account	book_class.cpp	/^        static int book_account;$/;"	m	class:book_class	file:	access:public
+book_class::book_account	book_class.cpp	/^int book_class::book_account=4;$/;"	m	class:book_class	file:
+book_class::book_class	book_class.cpp	/^        book_class(const book_class &book_class_obj);$/;"	p	class:book_class	file:	access:public	signature:(const book_class &book_class_obj)
+book_class::book_class	book_class.cpp	/^        book_class(double number);$/;"	p	class:book_class	file:	access:public	signature:(double number)
+book_class::book_class	book_class.cpp	/^        book_class(double number, double book_price);$/;"	p	class:book_class	file:	access:public	signature:(double number, double book_price)
+book_class::book_class	book_class.cpp	/^book_class::book_class(const book_class &book_class_obj){$/;"	f	class:book_class	signature:(const book_class &book_class_obj)
+book_class::book_class	book_class.cpp	/^book_class::book_class(double number){$/;"	f	class:book_class	signature:(double number)
+book_class::book_class	book_class.cpp	/^book_class::book_class(double number, double book_price):number(number), price(book_price){$/;"	f	class:book_class	signature:(double number, double book_price)
+book_class::get_book_info	book_class.cpp	/^        int get_book_info(void){$/;"	f	class:book_class	access:public	signature:(void)
+book_class::get_book_name	book_class.cpp	/^        string get_book_name(void);$/;"	p	class:book_class	file:	access:private	signature:(void)
+book_class::get_book_name	book_class.cpp	/^string book_class:: get_book_name(void){$/;"	f	class:book_class	signature:(void)
+book_class::get_book_number	book_class.cpp	/^        int get_book_number(void);$/;"	p	class:book_class	file:	access:private	signature:(void)
+book_class::get_book_number	book_class.cpp	/^int book_class::get_book_number(void){$/;"	f	class:book_class	signature:(void)
+book_class::get_number	book_class.cpp	/^        double get_number(); $/;"	p	class:book_class	file:	access:public	signature:()
+book_class::get_number	book_class.cpp	/^double book_class::get_number(){$/;"	f	class:book_class	signature:()
+book_class::get_other_info	book_class.cpp	/^        string get_other_info(void);$/;"	p	class:book_class	file:	access:public	signature:(void)
+book_class::get_other_info	book_class.cpp	/^string book_class::get_other_info(void){$/;"	f	class:book_class	signature:(void)
+book_class::name	book_class.cpp	/^        string name;$/;"	m	class:book_class	file:	access:public
+book_class::number	book_class.cpp	/^        double number;$/;"	m	class:book_class	file:	access:public
+book_class::price	book_class.cpp	/^        double price;$/;"	m	class:book_class	file:	access:public
+book_class::print_book_info	book_class.cpp	/^        friend void print_book_info(void);$/;"	p	class:book_class	file:	access:friend	signature:(void)
+book_class::ptr	book_class.cpp	/^        double *ptr;$/;"	m	class:book_class	file:	access:private
+book_class::~book_class	book_class.cpp	/^        ~book_class();$/;"	p	class:book_class	file:	access:public	signature:()
+book_class::~book_class	book_class.cpp	/^book_class::~book_class(){$/;"	f	class:book_class	signature:()
+book_id	cpp_common_excerise.cpp	/^    int book_id;$/;"	m	struct:Books	file:	access:public
+book_name	book_class.cpp	/^        string book_name;$/;"	m	class:ChineseBook	file:	access:public
+book_number	book_class.cpp	/^        int book_number;$/;"	m	class:ChineseBook	file:	access:public
+book_price	book_class.cpp	/^        int book_price;$/;"	m	class:ChineseBook	file:	access:public
+constTest	cpp_common_excerise.cpp	/^void constTest(){$/;"	f	signature:()
+data	book_class.cpp	/^        string data;$/;"	m	class:ChineseBook	file:	access:public
+day	enum_test.cpp	/^enum day{$/;"	g	file:
+daytime	enum_test.cpp	/^}daytime;$/;"	v	typeref:enum:day
+display	book_class.cpp	/^void display(book_class book_class_copy){$/;"	f	signature:(book_class book_class_copy)
+getMaxNumber	book_class.cpp	/^inline int getMaxNumber(int a, int b){$/;"	f	signature:(int a, int b)
+get_book_info	book_class.cpp	/^        int get_book_info(void){$/;"	f	class:book_class	access:public	signature:(void)
+get_book_info	cpp_common_excerise.cpp	/^void get_book_info(struct Books book){$/;"	f	signature:(struct Books book)
+get_book_name	book_class.cpp	/^        string get_book_name(void);$/;"	p	class:ChineseBook	file:	access:public	signature:(void)
+get_book_name	book_class.cpp	/^        string get_book_name(void);$/;"	p	class:book_class	file:	access:private	signature:(void)
+get_book_name	book_class.cpp	/^string ChineseBook::get_book_name(void){$/;"	f	class:ChineseBook	signature:(void)
+get_book_name	book_class.cpp	/^string book_class:: get_book_name(void){$/;"	f	class:book_class	signature:(void)
+get_book_number	book_class.cpp	/^        int get_book_number(void);$/;"	p	class:book_class	file:	access:private	signature:(void)
+get_book_number	book_class.cpp	/^int book_class::get_book_number(void){$/;"	f	class:book_class	signature:(void)
+get_number	book_class.cpp	/^        double get_number(); $/;"	p	class:book_class	file:	access:public	signature:()
+get_number	book_class.cpp	/^double book_class::get_number(){$/;"	f	class:book_class	signature:()
+get_other_info	book_class.cpp	/^        string get_other_info(void);$/;"	p	class:book_class	file:	access:public	signature:(void)
+get_other_info	book_class.cpp	/^string book_class::get_other_info(void){$/;"	f	class:book_class	signature:(void)
+get_pointer_func_test_value	cpp_common_excerise.cpp	/^void get_pointer_func_test_value(){$/;"	f	signature:()
+judgeTest	cpp_common_excerise.cpp	/^void judgeTest(){$/;"	f	signature:()
+loopTest	cpp_common_excerise.cpp	/^void loopTest(){$/;"	f	signature:()
+main	book_class.cpp	/^int main(){$/;"	f	signature:()
+main	cpp_common_excerise.cpp	/^int main(){$/;"	f	signature:()
+main	enum_test.cpp	/^int main(){$/;"	f	signature:()
+main	main.cpp	/^int main ()$/;"	f	signature:()
+monday	enum_test.cpp	/^	monday,$/;"	e	enum:day	file:
+name	book_class.cpp	/^        string name;$/;"	m	class:book_class	file:	access:public
+number	book_class.cpp	/^        double number;$/;"	m	class:book_class	file:	access:public
+pointer_array	cpp_common_excerise.cpp	/^void pointer_array(){$/;"	f	signature:()
+pointer_array	cpp_common_excerise.cpp	/^void pointer_array(int *param){$/;"	f	signature:(int *param)
+pointer_func_test	cpp_common_excerise.cpp	/^int *pointer_func_test(){$/;"	f	signature:()
+pointer_pointer_test	cpp_common_excerise.cpp	/^void pointer_pointer_test(){$/;"	f	signature:()
+pointer_string_array	cpp_common_excerise.cpp	/^void pointer_string_array(){$/;"	f	signature:()
+pointer_struct_test	cpp_common_excerise.cpp	/^void pointer_struct_test(struct Books *book){$/;"	f	signature:(struct Books *book)
+price	book_class.cpp	/^        double price;$/;"	m	class:book_class	file:	access:public
+printFuncTest	child_func.cpp	/^void printFuncTest(void){$/;"	f	signature:(void)
+print_book_info	book_class.cpp	/^        friend void print_book_info(void);$/;"	p	class:book_class	file:	access:friend	signature:(void)
+print_book_info	book_class.cpp	/^void print_book_info(book_class book_class_obj){$/;"	f	signature:(book_class book_class_obj)
+ptr	book_class.cpp	/^        double *ptr;$/;"	m	class:book_class	file:	access:private
+quote_func	cpp_common_excerise.cpp	/^void quote_func(int& a, int& b){$/;"	f	signature:(int& a, int& b)
+quote_test	cpp_common_excerise.cpp	/^void quote_test(){$/;"	f	signature:()
+setQuote_test	cpp_common_excerise.cpp	/^void setQuote_test(){$/;"	f	signature:()
+setValue	cpp_common_excerise.cpp	/^int& setValue(int i){$/;"	f	signature:(int i)
+set_transfer_pointer	cpp_common_excerise.cpp	/^void set_transfer_pointer(){$/;"	f	signature:()
+set_value_to_pointer_array_func	cpp_common_excerise.cpp	/^void set_value_to_pointer_array_func(){$/;"	f	signature:()
+string_test	cpp_common_excerise.cpp	/^void string_test(){$/;"	f	signature:()
+struct_test	cpp_common_excerise.cpp	/^struct Books struct_test(){$/;"	f	signature:()
+swap	cpp_common_excerise.cpp	/^void swap(int *x, int *y){$/;"	f	signature:(int *x, int *y)
+swap_address_copy	cpp_common_excerise.cpp	/^void swap_address_copy(int &a, int &b){$/;"	f	signature:(int &a, int &b)
+test_quote	cpp_common_excerise.cpp	/^void test_quote(){$/;"	f	signature:()
+thursday	enum_test.cpp	/^	thursday$/;"	e	enum:day	file:
+title	cpp_common_excerise.cpp	/^    char title[20];$/;"	m	struct:Books	file:	access:public
+transfer_pointer	cpp_common_excerise.cpp	/^void transfer_pointer(int *value){$/;"	f	signature:(int *value)
+tuesday	enum_test.cpp	/^	tuesday,$/;"	e	enum:day	file:
+val	cpp_common_excerise.cpp	/^int val[] = {1, 2, 3, 5, 2};$/;"	v
+wensday	enum_test.cpp	/^	wensday,$/;"	e	enum:day	file:
+~book_class	book_class.cpp	/^        ~book_class();$/;"	p	class:book_class	file:	access:public	signature:()
+~book_class	book_class.cpp	/^book_class::~book_class(){$/;"	f	class:book_class	signature:()
